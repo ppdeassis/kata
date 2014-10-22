@@ -43,6 +43,7 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     slop (3.6.0)
+    terminal-notifier-guard (1.5.3)
     thor (0.19.1)
     timers (4.0.1)
       hitimes
@@ -53,3 +54,4 @@ PLATFORMS
 DEPENDENCIES
   guard-rspec
   rspec
+  terminal-notifier-guard
