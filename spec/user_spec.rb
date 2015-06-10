@@ -17,8 +17,8 @@ describe User do
   end
 
 
-  it "email defaults to testeN@exemplo.com" do
-    expect(user.email).to match /^teste\d+\@exemplo\.com$/
+  it "email defaults to testeN@devolutivas.com" do
+    expect(user.email).to match /^teste\d+\@devolutivas\.com$/
   end
 
   it "emails defaults are generated using a sequential number" do
@@ -28,7 +28,7 @@ describe User do
     initial_seq = first_user.email.scan(/(\d+)\@/).flatten.first.to_i
 
     users.each do |user|
-      expect(user.email).to eq "teste#{initial_seq}@exemplo.com"
+      expect(user.email).to eq "teste#{initial_seq}@devolutivas.com"
       initial_seq += 1
     end
   end
@@ -41,11 +41,11 @@ describe User do
   it "name defaults are generated using a sequential number" do
     initial = User.count
 
-    expect(User.new.email).to eq("teste#{initial + 1}@exemplo.com")
-    expect(User.new.email).to eq("teste#{initial + 2}@exemplo.com")
-    expect(User.new.email).to eq("teste#{initial + 3}@exemplo.com")
-    expect(User.new.email).to eq("teste#{initial + 4}@exemplo.com")
-    expect(User.new.email).to eq("teste#{initial + 5}@exemplo.com")
+    expect(User.new.email).to eq("teste#{initial + 1}@devolutivas.com")
+    expect(User.new.email).to eq("teste#{initial + 2}@devolutivas.com")
+    expect(User.new.email).to eq("teste#{initial + 3}@devolutivas.com")
+    expect(User.new.email).to eq("teste#{initial + 4}@devolutivas.com")
+    expect(User.new.email).to eq("teste#{initial + 5}@devolutivas.com")
   end
 
 

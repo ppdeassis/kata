@@ -2,7 +2,7 @@ require 'cpf'
 
 class User
   DEFAULT_HASHED_PASSWORD = '$2a$10$9NXNJ14hmUBlXkY8uNuQq.Yp6P8n2Xf7bsH8F9UR5XEYgRV8gSsJO'
-  EMAIL_TEMPLATE = 'teste::n::@exemplo.com'
+  EMAIL_TEMPLATE = 'teste::n::@devolutivas.com'
   PERFIL = 6  # ESCOLA
 
   @@count = 0
